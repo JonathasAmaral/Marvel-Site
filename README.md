@@ -13,4 +13,4 @@
 
 ## Licença MIT
 
-link: https://jonathasamaral.github.io/Marvel/#!/home
+link: https://jonathasamaral.github.io/Marvel/
