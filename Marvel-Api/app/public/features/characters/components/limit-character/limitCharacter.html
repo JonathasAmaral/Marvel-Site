@@ -1,0 +1,13 @@
+<button class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+type="button"
+data-toggle="dropdown"
+aria-expanded="false">
+    Limit ({{ctrl.limit}})
+</button>
+<div class="dropdown-menu">
+    <a class="dropdown-item"
+    ng-click="ctrl.switchLimit(limit)"
+    ng-repeat="limit in ctrl.limits">
+        {{limit}}
+    </a>
+</div>

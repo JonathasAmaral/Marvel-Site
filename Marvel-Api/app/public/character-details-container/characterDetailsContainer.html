@@ -1,0 +1,59 @@
+<section ng-controller="CharacterDetailsController as ctrl">
+    <div class="details-container text-center">
+        <header class="headDetails">
+            <div class="headerimgDetails">
+                <img class="imgPainel" src="assets/img/banner-logo-marvel-1.jpg" alt="Panel">
+            </div>
+        </header>
+
+        <div class="charactersDetails row text-center">
+            <div class=" card col-xs-6 col-md-6 col-lg-6">
+                <div class="imagecard card-body ">
+                    <img class="card-img-top imgCharacter" ng-src="{{ctrl.details.thumbnail.path + '/portrait_xlarge.jpg'}}" alt="ImageCharacter">
+                </div>
+            </div>
+            <div class="charactername col-xs-6 col-md-6 col-lg-6">
+                <h5>{{ctrl.details.name}}</h5>
+            </div>
+        </div>
+
+        <div class="details">
+            <div class="categories">
+                <h3>Comics</h3>
+                <div>
+                    <a href="" ng-repeat="details in ctrl.details" class=" card col-xs-12 col-sm-4 col-md-3 col-lg-2">
+                        <div class="imagecard card-body">
+                            <img class="card-img-top imgCharacter" ng-src="{{ctrl.details.comic + '/portrait_xlarge.jpg'}}" alt="ImageCharacter">
+                        </div>
+                    </a>
+                    <div class="seeMore" ng-if="ctrl.details.length > 0">
+                        <button class="btn btn-primary"
+                        ng-click="ctrl.seeMore()">
+                            Ver mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- <div class="categories">
+                <h3>series</h3>
+                <div> colocar as series </div>
+            </div>
+
+            <div class="categories">
+                <h3>stories</h3>
+                <div> colocar os stories </div>
+            </div>
+            
+            <div class="categories">
+                <h3>events</h3>
+                <div> colocar os events </div>
+            </div>
+        </div> -->
+
+        <!-- <footer class="footer">
+            <div class="footerDetails">
+                <h5>Projeto Marvel-Api</h5>
+            </div>
+        </footer> -->
+</section>

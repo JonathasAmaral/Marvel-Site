@@ -1,0 +1,1 @@
+angular.module("marvelApi", ["ui.router", "ngAnimate"])

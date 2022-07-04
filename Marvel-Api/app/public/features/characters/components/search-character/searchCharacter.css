@@ -1,0 +1,32 @@
+.searchCharacters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+    width: 100%;
+    background-color: #202020;
+}
+
+.inputCharacter {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-color: #0062cc;
+    min-width: 10rem;
+    width: 40%;
+    outline: 0;
+}
+
+.buttonCharacters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 30px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.imgbutton {
+    width: 1.7rem;
+}
